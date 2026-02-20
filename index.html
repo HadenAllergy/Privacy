@@ -6,6 +6,8 @@
 <title>Privacy Policy — Haden Allergy App</title>
 <style>
   :root {
+    --brand: #1B5B7E;
+    --brand-dark: #144862;
     --forest: #2E7D32;
     --forest-light: #E8F5E9;
     --text: #333;
@@ -22,10 +24,18 @@
     padding: 0;
   }
   .header {
-    background: linear-gradient(135deg, var(--forest) 0%, #1B5E20 100%);
+    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
     color: white;
     padding: 40px 20px;
     text-align: center;
+  }
+  .header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    background: white;
+    padding: 8px;
   }
   .header h1 {
     font-size: 28px;
@@ -42,11 +52,11 @@
     padding: 32px 20px 60px;
   }
   h2 {
-    color: var(--forest);
+    color: var(--brand);
     font-size: 20px;
     margin: 32px 0 12px;
     padding-bottom: 6px;
-    border-bottom: 2px solid var(--forest-light);
+    border-bottom: 2px solid #D6EAF2;
   }
   h3 {
     color: var(--text);
@@ -63,8 +73,8 @@
   }
   li { margin-bottom: 6px; }
   .highlight {
-    background: var(--forest-light);
-    border-left: 4px solid var(--forest);
+    background: #E8F4F8;
+    border-left: 4px solid var(--brand);
     padding: 16px 20px;
     border-radius: 0 8px 8px 0;
     margin: 20px 0;
@@ -84,6 +94,7 @@
     font-size: 13px;
     border-top: 1px solid #E0E0E0;
   }
+  a { color: var(--brand); }
   @media (prefers-color-scheme: dark) {
     :root {
       --text: #E0E0E0;
@@ -91,16 +102,18 @@
       --bg: #1A1A1A;
       --white: #2A2A2A;
     }
-    .header { background: linear-gradient(135deg, #1B5E20 0%, #0D3B12 100%); }
-    h2 { border-bottom-color: #2E4D30; }
-    .highlight { background: #1E3320; border-left-color: var(--forest); }
+    .header { background: linear-gradient(135deg, #144862 0%, #0D3040 100%); }
+    h2 { border-bottom-color: #1E3A4A; }
+    .highlight { background: #1A2E38; border-left-color: var(--brand); }
+    a { color: #5BA8CC; }
   }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>🌿 Haden Allergy App</h1>
+  <img src="data:image/jpeg;base64,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" alt="Haden Allergy Logo">
+  <h1>Haden Allergy App</h1>
   <p>Privacy Policy</p>
 </div>
 
