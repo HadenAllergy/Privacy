@@ -72,7 +72,7 @@ function contactLine(s){var p=phoneSplit(s);var h='<div class="contact">'+esc(p.
 function secHead(en,loc){if(loc)return '<h2 class="h-loc">'+esc(loc)+'</h2><h2 class="h-en">'+en+"</h2>";return "<h2>"+en+"</h2>"}
 function langListHTML(){var h='<div id="lang-list" style="display:none">';var keys=Object.keys(E);for(var i=0;i<keys.length;i++){h+='<span class="lang-opt" onclick="__haaSetLang(\''+keys[i]+'\')">'+esc(E[keys[i]].lang)+"</span>"}h+="</div>";return h}
 function render(data){
-if(!data)return;
+if(!data)data={e:true};
 document.getElementById("no-data").style.display="none";
 var el=document.getElementById("content");el.style.display="block";
 var lang=getLang();var t=lang?T[lang]:null;var e=lang?E[lang]:null;
